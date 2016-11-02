@@ -31,6 +31,8 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
 
     private static final String BASE_URL = "http://www.ambellis.de/bekleidung";
 
+    private static final String BASE_IMAGES_URL = "https://dl.dropboxusercontent.com/u/25301739/img/";
+
     private String url = BASE_URL;
 
     private final int COLOR_NODE = 1;
@@ -62,6 +64,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         QuestionFragment fragment = new QuestionFragment();
         fragment.addListener(this);
         fragment.setQuestion(currentQuestion.getQuestion());
+        fragment.setQuestionImage(BASE_IMAGES_URL + currentQuestion.getQuestionImage());
         fragmentManager.beginTransaction().replace(R.id.fragments_container, fragment).commit();
 
     }
@@ -79,7 +82,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                     currentQuestion = styles.get(0);
                     currentPosition = 0;
                     currentNode = STYLE_NODE;
-                    openNewQuestionFragment(currentQuestion.getQuestion());
+                    openNewQuestionFragment(currentQuestion.getQuestion(), currentQuestion.getQuestionImage());
                     break;
                 case STYLE_NODE:
                     openWeb();
@@ -88,7 +91,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                     currentQuestion = colors.get(0);
                     currentPosition = 0;
                     currentNode = COLOR_NODE;
-                    openNewQuestionFragment(currentQuestion.getQuestion());
+                    openNewQuestionFragment(currentQuestion.getQuestion(), currentQuestion.getQuestionImage());
                     break;
 
             }
@@ -108,7 +111,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                         currentPosition = 0;
                         currentNode = STYLE_NODE;
                     }
-                    openNewQuestionFragment(currentQuestion.getQuestion());
+                    openNewQuestionFragment(currentQuestion.getQuestion(), currentQuestion.getQuestionImage());
 
                     break;
                 case STYLE_NODE:
@@ -124,7 +127,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                     } else {
                         currentPosition = currentPosition + 1;
                         currentQuestion = styles.get(currentPosition);
-                        openNewQuestionFragment(currentQuestion.getQuestion());
+                        openNewQuestionFragment(currentQuestion.getQuestion(), currentQuestion.getQuestionImage());
                     }
 
                     break;
@@ -143,7 +146,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                         currentPosition = currentPosition + 1;
                         currentQuestion = types.get(currentPosition);
                     }
-                    openNewQuestionFragment(currentQuestion.getQuestion());
+                    openNewQuestionFragment(currentQuestion.getQuestion(), currentQuestion.getQuestionImage());
                     break;
 
             }
@@ -155,12 +158,12 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
 
     private void openWeb() {
         Intent intent = new Intent(QuestionActivity.this, WebViewActivity.class);
-        intent.putExtra(WebViewActivity.URL,url);
+        intent.putExtra(WebViewActivity.URL, url);
         startActivity(intent);
         finish();
     }
 
-    private void openNewQuestionFragment(final String question) {
+    private void openNewQuestionFragment(final String question, final String imageUrl) {
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -168,6 +171,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                 QuestionFragment fragment = new QuestionFragment();
                 fragment.addListener(QuestionActivity.this);
                 fragment.setQuestion(question);
+                fragment.setQuestionImage(BASE_IMAGES_URL + imageUrl);
                 fragmentManager.beginTransaction().replace(R.id.fragments_container, fragment).commit();
             }
         }, 1000);
