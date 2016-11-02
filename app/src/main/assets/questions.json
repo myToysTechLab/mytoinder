@@ -3,22 +3,26 @@
     {
       "questionOrder": 1,
       "question": "Are you looking for dresses?",
-      "yesFilter": "kleider"
+      "yesFilter": "kleider",
+      "questionImage": ""
     },
     {
       "questionOrder": 2,
       "question": "What about jackets?",
-      "yesFilter": "jacken"
+      "yesFilter": "jacken",
+      "questionImage": ""
     },
     {
       "questionOrder": 3,
       "question": "maybe some pants?",
-      "yesFilter": "hosen"
+      "yesFilter": "hosen",
+      "questionImage": ""
     },
     {
       "questionOrder": 4,
       "question": "And skirts?",
-      "yesFilter": "roecke"
+      "yesFilter": "roecke",
+      "questionImage": ""
     }
   ],
   "colors": [
@@ -26,19 +30,22 @@
       "questionOrder": 1,
       "question": "Do you like warm colors?",
       "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss",
+      "questionImage": ""
     }
   ],
   "style": [
     {
       "questionOrder": 1,
       "question": "Do you prefer a casual style?",
-      "yesFilter": "casual"
+      "yesFilter": "casual",
+      "questionImage": ""
     },
     {
       "questionOrder": 2,
       "question": "So, a basic one?",
-      "yesFilter": "basic"
+      "yesFilter": "basic",
+      "questionImage": ""
     }
   ]
 }

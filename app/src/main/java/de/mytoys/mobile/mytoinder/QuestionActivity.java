@@ -47,7 +47,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("ambellinder");
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
         String json = getJsonFromFile();
         Questions questions = new Gson().fromJson(json, Questions.class);
