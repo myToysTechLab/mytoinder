@@ -1,8 +1,30 @@
 {
+  "type": [
+    {
+      "questionOrder": 1,
+      "question": "Are you looking for dresses?",
+      "yesFilter": "kleider"
+    },
+    {
+      "questionOrder": 2,
+      "question": "What about jackets?",
+      "yesFilter": "jacken"
+    },
+    {
+      "questionOrder": 3,
+      "question": "maybe some pants?",
+      "yesFilter": "hosen"
+    },
+    {
+      "questionOrder": 4,
+      "question": "And skirts?",
+      "yesFilter": "roecke"
+    }
+  ],
   "colors": [
     {
       "questionOrder": 1,
-      "question": "Are you looking for warm colors?",
+      "question": "Do you like warm colors?",
       "yesFilter": "gelb_gruen_orange_pink_rot",
       "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
     }
@@ -10,65 +32,13 @@
   "style": [
     {
       "questionOrder": 1,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": ""
+      "question": "Do you prefer a casual style?",
+      "yesFilter": "casual"
     },
     {
       "questionOrder": 2,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    },
-    {
-      "questionOrder": 3,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    },
-    {
-      "questionOrder": 4,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    },
-    {
-      "questionOrder": 5,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    }
-  ],
-  "type": [
-    {
-      "questionOrder": 1,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": ""
-    },
-    {
-      "questionOrder": 2,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    },
-    {
-      "questionOrder": 3,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    },
-    {
-      "questionOrder": 4,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
-    },
-    {
-      "questionOrder": 5,
-      "question": "Are you looking for warm colors?",
-      "yesFilter": "gelb_gruen_orange_pink_rot",
-      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+      "question": "So, a basic one?",
+      "yesFilter": "basic"
     }
   ]
 }

@@ -29,18 +29,17 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
 
     private Type currentQuestion;
 
-    private static final String BASE_URL = "http://www.ambellis.de/bekleidung/";
+    private static final String BASE_URL = "http://www.ambellis.de/bekleidung";
 
     private String url = BASE_URL;
 
-    private final int COLOR_NODE = 0;
+    private final int COLOR_NODE = 1;
 
-    private final int STYLE_NODE = 1;
+    private final int STYLE_NODE = 2;
 
-    private final int TYPE_NODE = 2;
+    private final int TYPE_NODE = 0;
 
-
-    private int currentNode = COLOR_NODE;
+    private int currentNode = TYPE_NODE;
     private int currentPosition = 0;
 
     @Override
@@ -48,7 +47,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("");
+        toolbar.setTitle("ambellinder");
         setSupportActionBar(toolbar);
         String json = getJsonFromFile();
         Questions questions = new Gson().fromJson(json, Questions.class);
@@ -57,7 +56,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         colors = questions.getColors();
         styles = questions.getStyle();
 
-        currentQuestion = colors.get(0);
+        currentQuestion = types.get(0);
 
         fragmentManager = getSupportFragmentManager();
         QuestionFragment fragment = new QuestionFragment();
@@ -83,13 +82,13 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                     openNewQuestionFragment(currentQuestion.getQuestion());
                     break;
                 case STYLE_NODE:
-                    currentQuestion = types.get(0);
-                    currentPosition = 0;
-                    currentNode = TYPE_NODE;
-                    openNewQuestionFragment(currentQuestion.getQuestion());
+                    openWeb();
                     break;
                 case TYPE_NODE:
-                    openWeb();
+                    currentQuestion = colors.get(0);
+                    currentPosition = 0;
+                    currentNode = COLOR_NODE;
+                    openNewQuestionFragment(currentQuestion.getQuestion());
                     break;
 
             }
@@ -120,16 +119,14 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
 
                     if (currentPosition == styles.size() - 1) {
 
-                        currentQuestion = types.get(0);
-                        currentPosition = 0;
-                        currentNode = TYPE_NODE;
-                    } else {
+                        openWeb();
 
+                    } else {
                         currentPosition = currentPosition + 1;
                         currentQuestion = styles.get(currentPosition);
+                        openNewQuestionFragment(currentQuestion.getQuestion());
                     }
 
-                    openNewQuestionFragment(currentQuestion.getQuestion());
                     break;
                 case TYPE_NODE:
 
@@ -138,12 +135,15 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                     }
 
                     if (currentPosition == types.size() - 1) {
-                        openWeb();
+
+                        currentQuestion = colors.get(0);
+                        currentPosition = 0;
+                        currentNode = COLOR_NODE;
                     } else {
                         currentPosition = currentPosition + 1;
                         currentQuestion = types.get(currentPosition);
-                        openNewQuestionFragment(currentQuestion.getQuestion());
                     }
+                    openNewQuestionFragment(currentQuestion.getQuestion());
                     break;
 
             }
