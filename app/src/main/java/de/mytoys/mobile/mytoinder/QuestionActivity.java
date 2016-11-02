@@ -176,7 +176,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
                 fragment.setQuestionImage(BASE_IMAGES_URL + imageUrl);
                 fragmentManager.beginTransaction().replace(R.id.fragments_container, fragment).commit();
             }
-        }, 1000);
+        }, 700);
 
     }
 
