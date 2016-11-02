@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -209,5 +211,16 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
             }
         }
         return returnString.toString();
+    }
+
+    public void click(View view){
+
+        if(view.getId()==R.id.yesBtn){
+            onQuestionAnswered(true);
+        }
+        else if(view.getId()==R.id.noBtn){
+            onQuestionAnswered(false);
+        }
+
     }
 }
