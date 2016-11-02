@@ -1,0 +1,74 @@
+{
+  "colors": [
+    {
+      "questionOrder": 1,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    }
+  ],
+  "style": [
+    {
+      "questionOrder": 1,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": ""
+    },
+    {
+      "questionOrder": 2,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    },
+    {
+      "questionOrder": 3,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    },
+    {
+      "questionOrder": 4,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    },
+    {
+      "questionOrder": 5,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    }
+  ],
+  "type": [
+    {
+      "questionOrder": 1,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": ""
+    },
+    {
+      "questionOrder": 2,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    },
+    {
+      "questionOrder": 3,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    },
+    {
+      "questionOrder": 4,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    },
+    {
+      "questionOrder": 5,
+      "question": "Are you looking for warm colors?",
+      "yesFilter": "gelb_gruen_orange_pink_rot",
+      "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss"
+    }
+  ]
+}
