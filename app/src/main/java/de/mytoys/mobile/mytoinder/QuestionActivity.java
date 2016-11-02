@@ -43,8 +43,8 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
 
     private final int TYPE_NODE = 0;
 
-    private int currentNode = TYPE_NODE;
-    private int currentPosition = 0;
+    private int currentNode;
+    private int currentPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +53,28 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
+
+    }
+    @Override
+    public void onResume(){
+        initCards();
+        super.onResume();
+    }
+
+    private void initCards(){
+
         String json = getJsonFromFile();
         Questions questions = new Gson().fromJson(json, Questions.class);
 
         types = questions.getType();
         colors = questions.getColors();
         styles = questions.getStyle();
+
+        url = BASE_URL;
+
+        currentNode = TYPE_NODE;
+        currentPosition = 0;
 
         currentQuestion = types.get(0);
 
@@ -68,7 +84,6 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         fragment.setQuestion(currentQuestion.getQuestion());
         fragment.setQuestionImage(BASE_IMAGES_URL + currentQuestion.getQuestionImage());
         fragmentManager.beginTransaction().replace(R.id.fragments_container, fragment).commit();
-
     }
 
     @Override
@@ -162,7 +177,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
         Intent intent = new Intent(QuestionActivity.this, WebViewActivity.class);
         intent.putExtra(WebViewActivity.URL, url);
         startActivity(intent);
-        finish();
+
     }
 
     private void openNewQuestionFragment(final String question, final String imageUrl) {
