@@ -13,77 +13,70 @@ public class Type {
     private String yesFilter;
     @SerializedName("noFilter")
     private String noFilter;
+    @SerializedName("questionImage")
+    private String questionImage;
 
     /**
-     * 
-     * @return
-     *     The questionOrder
+     * @return The questionOrder
      */
     public Integer getQuestionOrder() {
         return questionOrder;
     }
 
     /**
-     * 
-     * @param questionOrder
-     *     The questionOrder
+     * @param questionOrder The questionOrder
      */
     public void setQuestionOrder(Integer questionOrder) {
         this.questionOrder = questionOrder;
     }
 
     /**
-     * 
-     * @return
-     *     The question
+     * @return The question
      */
     public String getQuestion() {
         return question;
     }
 
     /**
-     * 
-     * @param question
-     *     The question
+     * @param question The question
      */
     public void setQuestion(String question) {
         this.question = question;
     }
 
     /**
-     * 
-     * @return
-     *     The yesFilter
+     * @return The yesFilter
      */
     public String getYesFilter() {
         return yesFilter;
     }
 
     /**
-     * 
-     * @param yesFilter
-     *     The yesFilter
+     * @param yesFilter The yesFilter
      */
     public void setYesFilter(String yesFilter) {
         this.yesFilter = yesFilter;
     }
 
     /**
-     * 
-     * @return
-     *     The noFilter
+     * @return The noFilter
      */
     public String getNoFilter() {
         return noFilter;
     }
 
     /**
-     * 
-     * @param noFilter
-     *     The noFilter
+     * @param noFilter The noFilter
      */
     public void setNoFilter(String noFilter) {
         this.noFilter = noFilter;
     }
 
+    public String getQuestionImage() {
+        return questionImage;
+    }
+
+    public void setQuestionImage(String questionImage) {
+        this.questionImage = questionImage;
+    }
 }
