@@ -33,7 +33,7 @@ public class QuestionActivity extends AppCompatActivity implements QuestionView 
 
     private static final String BASE_URL = "http://www.ambellis.de/bekleidung";
 
-    private static final String BASE_IMAGES_URL = "https://dl.dropboxusercontent.com/u/25301739/img/";
+    private static final String BASE_IMAGES_URL = "";
 
     private String url = BASE_URL;
 

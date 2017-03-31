@@ -4,25 +4,25 @@
       "questionOrder": 1,
       "question": "Are you looking for dresses?",
       "yesFilter": "kleider",
-      "questionImage": "dresses.jpg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=dresses.jpg&t=fhJiBGEMXKk5Bzv&scalingup=0"
     },
     {
       "questionOrder": 2,
       "question": "What about jackets?",
       "yesFilter": "jacken",
-      "questionImage": "jackes.jpg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=jackes.jpg&t=1XOxsHypaoaekCN&scalingup=0"
     },
     {
       "questionOrder": 3,
       "question": "maybe some pants?",
       "yesFilter": "hosen",
-      "questionImage": "pants.jpg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=pants.jpg&t=NSKOWIAzskLDAaj&scalingup=0"
     },
     {
       "questionOrder": 4,
       "question": "And skirts?",
       "yesFilter": "roecke",
-      "questionImage": "skirt.jpg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=skirt.jpg&t=c0YkkkAY7GbBPtJ&scalingup=0"
     }
   ],
   "colors": [
@@ -31,7 +31,7 @@
       "question": "Do you like warm colors?",
       "yesFilter": "gelb_gruen_orange_pink_rot",
       "noFilter": "beige_blau_braun_grau_lila_mehrfarbig_rosa_schwarz_silber_tuerkis_weiss",
-      "questionImage": "warm.jpg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=warm.jpg&t=OYNGdsGE2BHWqT1"
     }
   ],
   "style": [
@@ -39,13 +39,13 @@
       "questionOrder": 1,
       "question": "Do you prefer a casual style?",
       "yesFilter": "casual",
-      "questionImage": "casual.jpg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=casual.jpg&t=bu80wZ2qfFF8fq9&scalingup=0"
     },
     {
       "questionOrder": 2,
       "question": "So, a basic one?",
       "yesFilter": "basic",
-      "questionImage": "basic.jpeg"
+      "questionImage": "https://mybox.mytoys.de/index.php/apps/files_sharing/ajax/publicpreview.php?x=2880&y=818&a=true&file=basic.jpeg&t=pK2NKtAsQGQonS0&scalingup=0"
     }
   ]
 }
